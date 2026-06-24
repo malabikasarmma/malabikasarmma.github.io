@@ -10,25 +10,47 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 
+html{
+    overflow-x:hidden;
+}
+
 body{
     font-family:'Poppins',sans-serif;
     background:#0b1220;
     color:#fff;
+    overflow-x:hidden;
+    width:100%;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
 }
 
 /* NAV */
 nav{
     position:fixed;
+    top:0;
+    left:0;
     width:100%;
     display:flex;
     justify-content:space-between;
-    padding:20px 60px;
+    align-items:center;
+    padding:18px 60px;
     background:rgba(0,0,0,0.6);
     backdrop-filter:blur(10px);
     z-index:1000;
+    flex-wrap:wrap;
+    gap:10px;
 }
-nav h2{font-family:'Playfair Display',serif;color:#d4af37;}
-nav ul{display:flex;list-style:none;}
+nav h2{font-family:'Playfair Display',serif;color:#d4af37;flex-shrink:0;}
+nav ul{
+    display:flex;
+    list-style:none;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+}
 nav ul li{margin-left:25px;}
 nav a{color:#fff;text-decoration:none;}
 nav a:hover{color:#d4af37;}
@@ -36,16 +58,19 @@ nav a:hover{color:#d4af37;}
 /* HERO */
 .hero{
     display:flex;
-    height:100vh;
+    flex-wrap:wrap;
+    min-height:100vh;
     align-items:center;
-    padding:0 10%;
+    padding:120px 10% 60px;
+    gap:40px;
 }
 .hero-text{
-    flex:1;
+    flex:1 1 320px;
 }
 .hero-text h1{
     font-family:'Playfair Display',serif;
     font-size:3.5rem;
+    line-height:1.15;
 }
 .hero-text p{
     margin:20px 0;
@@ -56,7 +81,8 @@ nav a:hover{color:#d4af37;}
     margin-top:10px;
 }
 .hero-img{
-    flex:1;
+    flex:1 1 280px;
+    min-width:0;
 }
 .hero-img img{
     width:100%;
@@ -64,7 +90,7 @@ nav a:hover{color:#d4af37;}
 }
 
 /* SECTION */
-section{padding:80px 10%;}
+section{padding:80px 6%;overflow-x:hidden;}
 h2{
     font-family:'Playfair Display',serif;
     color:#d4af37;
@@ -72,7 +98,7 @@ h2{
 }
 
 /* ABOUT */
-.about{display:flex;gap:40px;align-items:center;}
+.about{display:flex;flex-wrap:wrap;gap:40px;align-items:center;}
 .about p{color:#cbd5e1;}
 
 /* GALLERY */
@@ -121,7 +147,7 @@ h2{
 }
 
 /* CONTACT */
-.contact p{margin:10px 0;}
+.contact p{margin:10px 0;word-break:break-word;}
 .contact a{color:#d4af37;text-decoration:none;}
 
 /* FOOTER */
@@ -130,6 +156,62 @@ footer{
     padding:20px;
     background:#020617;
     margin-top:40px;
+}
+footer p{font-size:0.9rem;color:#cbd5e1;}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Tablets */
+@media (max-width:900px){
+    nav{padding:16px 30px;}
+    .hero{padding:130px 7% 50px;}
+    .hero-text h1{font-size:2.8rem;}
+    section{padding:60px 7%;}
+}
+
+/* Mobile */
+@media (max-width:600px){
+    nav{
+        flex-direction:column;
+        align-items:flex-start;
+        padding:14px 20px;
+        gap:8px;
+    }
+    nav ul{
+        width:100%;
+        justify-content:flex-start;
+        gap:4px 16px;
+    }
+    nav ul li{margin-left:0;}
+
+    .hero{
+        padding:140px 6% 50px;
+        text-align:center;
+        gap:30px;
+    }
+    .hero-text{flex:1 1 100%;order:2;}
+    .hero-img{flex:1 1 100%;order:1;max-width:320px;margin:0 auto;}
+    .hero-text h1{font-size:2.2rem;}
+    .hero-text p{font-size:0.95rem;}
+
+    section{padding:50px 6%;}
+    h2{font-size:1.6rem;}
+
+    .about{text-align:center;justify-content:center;}
+
+    .gallery{grid-template-columns:1fr 1fr;gap:12px;}
+
+    .works{grid-template-columns:1fr;}
+    .card{padding:20px;}
+
+    .contact{text-align:center;}
+}
+
+/* Small phones */
+@media (max-width:380px){
+    .hero-text h1{font-size:1.8rem;}
+    nav h2{font-size:1.3rem;}
+    .gallery{grid-template-columns:1fr;}
 }
 </style>
 </head>
@@ -214,12 +296,12 @@ footer{
 <!-- CONTACT -->
 <section id="contact" class="contact">
     <h2>Contact</h2>
-    <p>Email: yourmail@email.com</p>
-    <p>Instagram: <a href="https://www.instagram.com/malabika_sarmabhubaneswar/">@ymalabika_sarmabhubaneswar</a></p>
+    <p>Email: malabika2011@yahoo.com</p>
+    <p>Instagram: <a href="https://www.instagram.com/malabika_sarmabhubaneswar/">@malabika_sarmabhubaneswar</a></p>
 </section>
 
 <footer>
-    <p>© 2026 Malabika Sarmma | All Rights Reserved</p>
+    <p>© 2026 Malabika Sarma | All Rights Reserved</p>
 </footer>
 
 </body>
