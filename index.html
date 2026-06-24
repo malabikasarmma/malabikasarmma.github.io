@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Malabika Sarmma | Author</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0b1220;
+    color:#fff;
+}
+
+/* NAV */
+nav{
+    position:fixed;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding:20px 60px;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+nav h2{font-family:'Playfair Display',serif;color:#d4af37;}
+nav ul{display:flex;list-style:none;}
+nav ul li{margin-left:25px;}
+nav a{color:#fff;text-decoration:none;}
+nav a:hover{color:#d4af37;}
+
+/* HERO */
+.hero{
+    display:flex;
+    height:100vh;
+    align-items:center;
+    padding:0 10%;
+}
+.hero-text{
+    flex:1;
+}
+.hero-text h1{
+    font-family:'Playfair Display',serif;
+    font-size:3.5rem;
+}
+.hero-text p{
+    margin:20px 0;
+    color:#d1d5db;
+}
+.tagline{
+    color:#d4af37;
+    margin-top:10px;
+}
+.hero-img{
+    flex:1;
+}
+.hero-img img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* SECTION */
+section{padding:80px 10%;}
+h2{
+    font-family:'Playfair Display',serif;
+    color:#d4af37;
+    margin-bottom:30px;
+}
+
+/* ABOUT */
+.about{display:flex;gap:40px;align-items:center;}
+.about p{color:#cbd5e1;}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.gallery img{
+    width:100%;
+    border-radius:10px;
+    transition:0.3s;
+}
+.gallery img:hover{transform:scale(1.05);}
+
+/* WORKS */
+.works{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.card{
+    background:#111827;
+    padding:25px;
+    border-radius:12px;
+    border:1px solid rgba(212,175,55,0.2);
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#d4af37;
+}
+.card h3{margin-bottom:10px;}
+.card p{color:#cbd5e1;}
+.btn{
+    margin-top:15px;
+    display:inline-block;
+    padding:8px 15px;
+    border:1px solid #d4af37;
+    color:#d4af37;
+    text-decoration:none;
+}
+.btn:hover{
+    background:#d4af37;
+    color:#000;
+}
+
+/* CONTACT */
+.contact p{margin:10px 0;}
+.contact a{color:#d4af37;text-decoration:none;}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <h2>Malabika</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Photos</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>Malabika Sarmma</h1>
+        <p class="tagline">Assamese Author | Storyteller | Creative Voice</p>
+        <p>"Words that touch hearts, stories that stay forever."</p>
+    </div>
+
+    <div class="hero-img">
+        <!-- 🔴 REPLACE THIS IMAGE -->
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRxigoWIInWAtpJuFaHrOCAdjjcBXL71-a1WVHo2uEB9SFIhsVK9djgWsnwamSTemO3FLV80Pz7l1y3ZOCnALfVLTNjNTKVmWmfdzLr7L1-D2NfTMtS2tCz7SrX1-nRwTWWVMM5XfoHrEC_u-muRnh7WGbZfB7TWiUjTz4kIEScY6ZJMQ9HVyuAIRHzg2U/s1536/ChatGPT%20Image%20Jun%2024,%202026,%2010_53_31%20AM.png" alt="hero">
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <div>
+        <h2>About Me</h2>
+        <p>
+            I am Malabika Sarmma, an Assamese author and storyteller passionate about capturing emotions, culture, and human experiences through words. My work reflects stories that connect deeply with readers.
+        </p>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+
+        <!-- 🔴 REPLACE THESE IMAGES -->
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2f9mxt98Zd3fwjxjxKyFgA3FJuUSUKxMzpxcxNDdxmbkHduJVNLYRbW8Wnog8PnQ709WlWMcUJ9CzVdxDfIUr8LSBkDqy_uB8_jujGUvhcDB9-eyW9TeJ6xE5u0oRV4N56Nktui7P7N3t43vVTpPk40BsNKYeWiWvpiuniHukDZ3cJ6FmIQYwsJXS9c3E/s1445/ChatGPT%20Image%20Jun%2024,%202026,%2011_16_16%20AM.png">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGo6gA0u6eX5KUrcNiHwU20_NAgiHkma6rLhGRh6Y_v3XMBDtkmFns2i1ZsrqroIq7Ufynqc12cj90ucMz7aixmP4fUq2Ga-ow7S1b2mPgGGXe7lYb8t3dK40a52v0dAJm73j-KdMJW58uhglp7r6E3C6rll5yX7vKYy0aXwQiFhIx1fwS4ROmTjs6k2pA/s1402/ChatGPT%20Image%20Jun%2024,%202026,%2011_09_01%20AM.png">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiowTahOEFjIxdkORA8TNA7a7iD862emPltte6nvv3BlCaZe8IvlkpxMdpToVzmNy2L9Y5E9KUIrDXQBg13vqwkjzY4dwj1e0y4pslYZGdCfgih1zcZlPKSJ_7xenIqyG-so9hcf5E6KL7Qd4EyXUBenqtKvJk456kesRTtEESPBJVsvhOokTWjjY84XEJF/s1412/ChatGPT%20Image%20Jun%2024,%202026,%2011_06_38%20AM.png">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKesFMF0LQjB3bhB2rrm4Vb2nTSP6T2KgRdzpmImjvUf7Rs6z-WkVckG0gi8fPG9HTIcoZTGU48Wsszn_myRrcpzkRuUVRmoeQSAqTMTqEJV0LoV2TmNv_FY9V5aw-Y_n0SsuP0nnSrOcmgnOCEkBfV34RXbitpANny-pu_1TDedREuvS0ZhtE5BwXlzeP/s1429/ChatGPT%20Image%20Jun%2024,%202026,%2011_05_42%20AM.png">
+
+    </div>
+</section>
+
+<!-- WORKS -->
+<section id="works">
+    <h2>My Works</h2>
+    <div class="works">
+
+        <div class="card">
+            <h3>Short Story Collection</h3>
+            <p>A series of emotionally driven short stories reflecting life and culture.</p>
+            <a href="#" class="btn">Explore</a>
+        </div>
+
+        <div class="card">
+            <h3>Poetry</h3>
+            <p>Expressive poems exploring love, identity, and human connection.</p>
+            <a href="#" class="btn">Explore</a>
+        </div>
+
+        <div class="card">
+            <h3>Blogs & Articles</h3>
+            <p>Creative writing pieces and storytelling blogs published online.</p>
+            <a href="#" class="btn">Explore</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: yourmail@email.com</p>
+    <p>Instagram: <a href="https://www.instagram.com/malabika_sarmabhubaneswar/">@ymalabika_sarmabhubaneswar</a></p>
+</section>
+
+<footer>
+    <p>© 2026 Malabika Sarmma | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
